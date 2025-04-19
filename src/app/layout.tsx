@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import './global.css'
 import { Header } from '@/widgets/header'
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter'
 import { Roboto } from 'next/font/google'
