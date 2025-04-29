@@ -1,13 +1,9 @@
-import { Container } from '@mui/material'
+import { HeroBlock } from '@/widgets/heroBlock'
 
 export function HomePage() {
   return (
-    <Container
-      sx={{
-        backgroundImage:
-          'radial-gradient(ellipse 80% 50% at 50% -20%, hsl(210, 100%, 16%), transparent);',
-          height: '100vh'
-      }}
-    ></Container>
+    <main>
+      <HeroBlock />
+    </main>
   )
 }
