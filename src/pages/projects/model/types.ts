@@ -1,5 +1,3 @@
-import { StaticImageData } from 'next/image'
-
 export type ProjectType = {
   url: string
   image: string
