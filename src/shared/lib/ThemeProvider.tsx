@@ -1,5 +1,5 @@
 import { ThemeProvider as MuiThemeProvider } from '@mui/material/styles'
-import theme from '@/app/theme'
+import theme from '@/shared/ui/theme'
 import { ReactNode } from 'react'
 
 export default function ThemeProvider({

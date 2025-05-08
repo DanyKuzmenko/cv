@@ -1,4 +1,4 @@
-import { HeroBlock } from '@/widgets/heroBlock'
+import { HeroBlock } from '@/pages/home/ui/HeroBlock'
 
 export function HomePage() {
   return (

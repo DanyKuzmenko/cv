@@ -4,8 +4,9 @@ import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter'
 import { Roboto } from 'next/font/google'
 import ThemeProvider from '@/shared/lib/ThemeProvider'
 import { ReactNode } from 'react'
-import { CssBaseline } from '@mui/material'
+import { Box, CssBaseline } from '@mui/material'
 import AppLayout from '@/shared/ui/AppLayout'
+import './global.css'
 
 export const metadata: Metadata = {
   title: 'Резюме Кузьменко Даниил',
@@ -26,17 +27,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru" className={roboto.variable}>
-    <body>
-    <AppRouterCacheProvider options={{ key: 'css' }}>
-      <ThemeProvider>
-        <CssBaseline />
-        <AppLayout>
-          <Header />
-          {children}
-        </AppLayout>
-      </ThemeProvider>
-    </AppRouterCacheProvider>
-    </body>
+    <Box component={'body'}>
+      <AppRouterCacheProvider options={{ key: 'css' }}>
+        <ThemeProvider>
+          <CssBaseline />
+          <AppLayout>
+            <Header />
+            {children}
+          </AppLayout>
+        </ThemeProvider>
+      </AppRouterCacheProvider>
+    </Box>
     </html>
   )
 }

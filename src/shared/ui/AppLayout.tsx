@@ -15,6 +15,7 @@ export default function AppLayout({
         height: '100vh',
         width: '100vw',
         pt: 10,
+        px: 0,
       }}
     >
       <Container maxWidth={'lg'}>

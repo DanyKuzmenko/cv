@@ -1,5 +1,5 @@
 import { Box, Typography } from '@mui/material'
-import meImage from '@/widgets/heroBlock/assets/me.png'
+import meImage from '../../../../public/heroBlockMe.png'
 import Image from 'next/image'
 
 export function HeroBlock() {

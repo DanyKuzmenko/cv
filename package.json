@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "steiger": "npx steiger ./src --watch"
   },
   "dependencies": {
     "@emotion/cache": "^11.14.0",
@@ -27,6 +28,7 @@
     "eslint": "^9",
     "eslint-config-next": "15.2.4",
     "prettier": "3.5.3",
+    "steiger": "^0.5.7",
     "typescript": "^5"
   }
 }
