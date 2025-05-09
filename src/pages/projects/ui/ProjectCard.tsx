@@ -1,11 +1,12 @@
 import { Box, Card, CardActionArea, CardContent, CardMedia, Chip, Grid, Typography } from '@mui/material'
-import { ProjectType } from '@/pages/projects/model/types'
+import { ProjectType } from '@/entities/project'
+import Link from 'next/link'
 
 export function ProjectCard(project: ProjectType) {
   return (
     <Card sx={{ maxWidth: { xs: '358px' }, mx: 'auto' }}>
-      < CardActionArea>
-        < CardMedia sx={{ height: { xs: '202px', md: '210px' } }} image={project.image} title={project.name}>
+      <CardActionArea LinkComponent={Link} href={`/project/${project.routeName}`}>
+        <CardMedia sx={{ height: { xs: '202px', md: '210px' } }} image={project.image} title={project.name}>
           <Chip
             sx={{ position: 'absolute', top: '12px', right: '12px' }}
             label={project.status}

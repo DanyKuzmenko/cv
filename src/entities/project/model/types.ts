@@ -1,4 +1,6 @@
 export type ProjectType = {
+  id: number
+  routeName: string
   url: string
   image: string
   name: string
